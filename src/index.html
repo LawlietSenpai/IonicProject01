@@ -18,14 +18,20 @@
   <!-- cordova.js required for cordova apps (remove if not needed) -->
   <script src="cordova.js"></script>
 
-  <!-- un-comment this code to enable service worker
-  <script>
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('service-worker.js')
-        .then(() => console.log('service worker installed'))
-        .catch(err => console.error('Error', err));
-    }
-  </script>-->
+
+<script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyC8DHC72YEcwqY575mS3_BsCViN73eo0ns",
+    authDomain: "ionicchat-abc005.firebaseapp.com",
+    databaseURL: "https://ionicchat-abc005.firebaseio.com",
+    projectId: "ionicchat-abc005",
+    storageBucket: "ionicchat-abc005.appspot.com",
+    messagingSenderId: "603143759208"
+  };
+  firebase.initializeApp(config);
+</script>
 
   <link href="build/main.css" rel="stylesheet">
 

@@ -1,12 +1,16 @@
-import { NgModule, ErrorHandler } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
+import { IonicApp, IonicModule } from 'ionic-angular';
 import { MyApp } from './app.component';
 
 import { AboutPage } from '../pages/about/about';
 import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
+import { DetailPage } from '../pages/detail/detail';
+import { SigninPage } from '../pages/signin/signin';
+import { RoomPage } from '../pages/room/room';
+import { AddRoomPage } from '../pages/add-room/add-room';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -46,7 +50,11 @@ export class MyErrorHandler implements ErrorHandler {
     AboutPage,
     ContactPage,
     HomePage,
-    TabsPage
+    TabsPage,
+    DetailPage,
+    SigninPage,
+    RoomPage,
+    AddRoomPage
   ],
   imports: [
     BrowserModule,
@@ -58,7 +66,11 @@ export class MyErrorHandler implements ErrorHandler {
     AboutPage,
     ContactPage,
     HomePage,
-    TabsPage
+    TabsPage,
+    DetailPage,
+    SigninPage,
+    RoomPage,
+    AddRoomPage
   ],
   providers: [
     StatusBar,
